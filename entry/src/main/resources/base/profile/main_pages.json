@@ -1,0 +1,20 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/LoginPage",
+    "pages/RegisterPage",
+    "pages/components/CardDetailPage",
+    "pages/SearchPage",
+    "pages/SearchResultPage",
+    "pages/ChatPage",
+    "pages/EditProfilePage",
+    "pages/MessageListPage",
+    "pages/Category",
+    "pages/Mine",
+    "pages/Shop",
+    "pages/OrderPage",
+    "pages/ConfirmOrderPage",
+    "pages/AddressPage",
+    "pages/FavoritePage"
+  ]
+}
