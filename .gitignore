@@ -43,6 +43,7 @@ local.properties
 *.db
 *.sqlite
 *.sqlite3
+/data/
 
 # Maven/Gradle
 pom.xml.tag
@@ -59,3 +60,10 @@ buildNumber.properties
 *.hap
 *.app
 *.abc
+
+# 其他
+.cxx
+/.clangd
+/.clang-format
+/.clang-tidy
+**/.test
