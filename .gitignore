@@ -1,0 +1,61 @@
+# 前端依赖
+/node_modules/
+/oh_modules/
+
+# 构建输出
+/build/
+/dist/
+/target/
+
+# 编辑器和IDE配置
+.idea/
+.vscode/
+.cursor/
+.codebuddy/
+.trae/
+
+# 构建工具缓存
+.hvigor/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# 日志文件
+*.log
+hs_err_pid*.log
+replay_*.log
+
+# 临时文件
+*.tmp
+*.temp
+.cache/
+
+# 本地配置
+local.properties
+.env
+.env.local
+.env.*.local
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# Maven/Gradle
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# HarmonyOS
+*.hap
+*.app
+*.abc
