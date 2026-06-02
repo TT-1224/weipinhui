@@ -1,7 +1,7 @@
 import mainViewModel from '../../viewmodel/MainViewModel';
 import ItemData from '../../viewmodel/ItemData';
 import CommonConstants from '../../constants/CommonConstants';
-
+/*Swiper轮播 + Grid双列 + List横向滚动*/ 
 @Component
 export default struct HomePage {
   private swiperController: SwiperController = new SwiperController();

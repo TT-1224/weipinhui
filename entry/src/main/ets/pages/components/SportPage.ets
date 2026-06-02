@@ -11,6 +11,7 @@ export default struct SportPage {
     ListCardDisplay({sportCardInfo : this.sportCardInfo})
   }
 }
+// List纵向滚动 + 图片卡片
 @Component
 struct ListCardDisplay {
   sportCardInfo : Array<SimpleCardInfo> = []

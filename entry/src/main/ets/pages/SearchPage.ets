@@ -21,6 +21,12 @@ struct SearchPage {
   ];
   private searchTimer: number = -1;
 
+// 用户输入关键词 → 点击搜索
+//     ↓
+// addToHistory() → saveHistory() (AppStorage持久化)
+//     ↓
+// router.pushUrl('pages/SearchResultPage', { keyword })
+
   aboutToAppear(): void {
     this.loadHistory();
   }

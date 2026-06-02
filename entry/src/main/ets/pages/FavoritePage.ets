@@ -14,6 +14,14 @@ interface GoodsInfo {
   brand: string
 }
 
+// FavoritePage (UI层)
+//     ↕ 订阅/通知
+// FavoriteManager (单例管理层)
+//     ↕ HTTP请求
+// FavoriteController (后端)
+//     ↕ MyBatis-Plus
+// favorite表 (MySQL)
+
 @Entry
 @ComponentV2
 struct FavoritePage {

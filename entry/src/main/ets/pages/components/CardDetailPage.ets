@@ -294,7 +294,7 @@ struct CardDetailPage {
   /**
    *   切换收藏状态（支持场景1、场景2、场景3）
    * - 调用FavoriteManager.toggleFavorite()
-   * - ✅ 修复：不再手动更新isFavorited，完全由subscribe回调统一管理
+   * - 修复：不再手动更新isFavorited，完全由subscribe回调统一管理
    * - 避免双重更新导致的状态反转问题
    */
   private async toggleFavorite(): Promise<void> {
@@ -308,14 +308,14 @@ struct CardDetailPage {
       const success: boolean = await FavoriteManager.toggleFavorite(this.goodsId);
       
       if (success) {
-        // ✅ 关键修复：不再手动更新 this.isFavorited！
+        //  关键修复：不再手动更新 this.isFavorited！
         // 原因：FavoriteManager.toggleFavorite() 内部会：
         // 1. 更新本地缓存（favoriteGoodsIdSet）
         // 2. 调用 notifyListeners() 触发所有订阅者
         // 3. subscribe 回调会自动更新 this.isFavorited
         // 
-        // ❌ 如果这里再手动执行 this.isFavorited = !this.isFavorited
-        //    会导致状态被翻转两次，回到原值！（这就是bug的根源）
+        // 如果这里再手动执行 this.isFavorited = !this.isFavorited
+        // 会导致状态被翻转两次，回到原值！
         
         console.info('✅ [CardDetailPage] 收藏操作成功 - goodsId:', this.goodsId, '等待回调更新UI');
       }

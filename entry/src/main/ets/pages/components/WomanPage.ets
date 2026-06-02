@@ -2,7 +2,7 @@
 import mainViewModel from '../../viewmodel/MainViewModel';
 import ItemData from '../../viewmodel/ItemData';
 import CommonConstants from '../../constants/CommonConstants';
-
+//Swiper + Tabs(精选分类/上装/下装) + Grid品牌展示 
 @Component
 export default struct WomanPage {
   private swiperController: SwiperController = new SwiperController();

@@ -49,7 +49,8 @@ struct SearchResultPage {
     { label: '价格升序', value: 'price_asc' },
     { label: '价格降序', value: 'price_desc' }
   ];
-
+// → GoodsController.searchGoods() → GoodsService.searchGoods()
+//  → MySQL LIKE 模糊搜索 goods.name 和 goods.sub_title
   aboutToAppear(): void {
     const params: Record<string, Object> | undefined = router.getParams() as Record<string, Object> | undefined;
     if (params && params['keyword']) {

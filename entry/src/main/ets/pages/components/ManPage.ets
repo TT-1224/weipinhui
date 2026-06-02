@@ -40,7 +40,7 @@ export default struct ManPage {
   aboutToAppear() {
     this.getItemSizeArray()
   }
-
+// 	WaterFlow瀑布流 + LazyForEach懒加载
   build() {
     WaterFlow({ footer: () => this.itemFoot() }) {
       LazyForEach(this.datasource, (item: ItemData, index: number) => {
